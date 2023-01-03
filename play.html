@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Game</title>
+</head>
+<style>
+    #playGamePage{
+        cursor: none;
+    }
+</style>
+<body>
+    <div class="freenzyHome">
+
+        <video src="assets/videos/background.mp4" autoplay loop muted class="freenzyVid">
+        </video>
+    </div>
+    <div id="playGamePage" style="display: none;">
+        <div id="gameHeader">
+            <div id="backToMenu">
+                <img src="assets/images/HeaderContent/menu.png" width="200px" height="60px" alt="">
+
+            </div>
+            <div id="scoreProgressBar">
+                <div id="movingScoreBar"></div>
+            </div>
+            <div id="scoreImg"><img src="assets/images/HeaderContent/Score.png" width="200px" height="60px" alt="">
+            </div>
+            <div id="scoreNumber">
+                <h3 id="playerScore"></h3>
+            </div>
+        </div>
+
+        <div id="gameDiv">
+            <div id="player"></div>
+        </div>
+    </div>
+
+
+    <div id="GameOverPage" style="display: none;">
+        <img src="assets/Div/GameOver/Gameover.png" width="700px" height="500px" alt="">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- audio files -->
+    <audio id="load" style="display: none;">
+        <source src="assets/MySounds/mixkit-short-explosion-1694.wav" type="audio/mpeg">
+    </audio>
+    <audio id="startUser" style="display: none;">
+        <source src="assets/MySounds/game-start-6104.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="startFish" style="display: none;">
+        <source src="assets/MySounds/button-124476.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="byebye" style="display: none;">
+        <source src="assets/MySounds/dad-says-bye-bye-113119.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="eatFish" style="display: none;">
+        <source src="assets/sound/eat.wav" type="audio/mpeg">
+    </audio>
+
+    <audio id="gameOver" style="display: none;">
+        <source src="assets/sound/GameOver.wav" type="audio/mpeg">
+    </audio>
+    <audio id="sizeUp" style="display: none;">
+        <source src="assets/sound/size_up.wav" type="audio/mpeg">
+    </audio>
+
+    <audio id="die" style="display: none;">
+        <source src="assets/sound/die.wav" type="audio/mpeg">
+    </audio>
+
+    <audio id="win" style="display: none;">
+        <source src="assets/sound/congratulation.wav" type="audio/mpeg">
+    </audio>
+
+
+
+
+
+
+
+    <script src="js/jqueryDevMin.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/fishClass.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
